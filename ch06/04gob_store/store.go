@@ -44,8 +44,8 @@ func load(data interface{}, filename string) {
 
 func main() {
 	post := Post{Id: 1, Content: "Hello World!", Author: "Sau Sheong"}
-	store(post, "post1")
+	store(post, "ch06/04gob_store/post1")
 	var postRead Post
-	load(&postRead, "post1")
+	load(&postRead, "ch06/04gob_store/post1")
 	fmt.Println(postRead)
 }

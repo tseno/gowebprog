@@ -29,7 +29,7 @@ type Comment struct {
 }
 
 func main() {
-	xmlFile, err := os.Open("post.xml")
+	xmlFile, err := os.Open("ch07/06xml_parsing_decoder/post.xml")
 	if err != nil {
 		fmt.Println("Error opening XML file:", err)
 		return

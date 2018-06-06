@@ -50,7 +50,7 @@ func main() {
   }
 
 
-	jsonFile, err := os.Create("post.json")
+	jsonFile, err := os.Create("ch07/13json_creating_encoder/post.json")
 	if err != nil {
 		fmt.Println("Error creating JSON file:", err)
 		return

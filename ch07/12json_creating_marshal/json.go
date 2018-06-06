@@ -48,11 +48,12 @@ func main() {
   }
 
 	output, err := json.MarshalIndent(&post, "", "\t\t")
+	//output, err := json.Marshal(&post)
 	if err != nil {
 		fmt.Println("Error marshalling to JSON:", err)
 		return
 	}
-	err = ioutil.WriteFile("post.json", output, 0644)
+	err = ioutil.WriteFile("ch07/12json_creating_marshal/post.json", output, 0644)
 	if err != nil {
 		fmt.Println("Error writing JSON to file:", err)
 		return

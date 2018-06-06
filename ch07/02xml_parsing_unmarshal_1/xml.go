@@ -22,7 +22,7 @@ type Author struct {
 }
 
 func main() {
-	xmlFile, err := os.Open("post.xml")
+	xmlFile, err := os.Open("ch07/02xml_parsing_unmarshal_1/post.xml")
 	if err != nil {
 		fmt.Println("Error opening XML file:", err)
 		return

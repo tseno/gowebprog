@@ -25,7 +25,7 @@ func main() {
 		Content: "Hello World!",
 		Author: Author{
 			Id:   "2",
-			Name: "Sau Sheong",
+			Name: "Sau Sheongあ",
 		},
 	}
   // output, err := xml.Marshal(&post)
@@ -34,7 +34,7 @@ func main() {
 		fmt.Println("Error marshalling to XML:", err)
 		return
 	}
-	err = ioutil.WriteFile("post.xml", []byte(xml.Header + string(output)), 0644)
+	err = ioutil.WriteFile("ch07/07xml_creating_marshal/post.xml", []byte(xml.Header + string(output)), 0644)
 	if err != nil {
 		fmt.Println("Error writing XML to file:", err)
 		return

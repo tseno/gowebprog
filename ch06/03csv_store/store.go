@@ -15,7 +15,7 @@ type Post struct {
 
 func main() {
 	// creating a CSV file
-	csvFile, err := os.Create("posts.csv")
+	csvFile, err := os.Create("ch06/03csv_store/posts.csv")
 	if err != nil {
 		panic(err)
 	}
@@ -39,7 +39,7 @@ func main() {
 	writer.Flush()
 
 	// reading a CSV file
-	file, err := os.Open("posts.csv")
+	file, err := os.Open("ch06/03csv_store/posts.csv")
 	if err != nil {
 		panic(err)
 	}

@@ -29,7 +29,7 @@ func main() {
 		},
 	}
 
-	xmlFile, err := os.Create("post.xml")
+	xmlFile, err := os.Create("ch07/08xml_creating_encoder/post.xml")
 	if err != nil {
 		fmt.Println("Error creating XML file:", err)
 		return

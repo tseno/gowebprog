@@ -27,7 +27,7 @@ type Comment struct {
 }
 
 func main() {
-	jsonFile, err := os.Open("post.json")
+	jsonFile, err := os.Open("ch07/11json_parsing_decoder/post.json")
 	if err != nil {
 		fmt.Println("Error opening JSON file:", err)
 		return
